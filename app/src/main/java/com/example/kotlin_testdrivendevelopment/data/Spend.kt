@@ -1,4 +1,4 @@
-package net.simplifiedcoding.spendtracker.data
+package com.example.kotlin_testdrivendevelopment.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

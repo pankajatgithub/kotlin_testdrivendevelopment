@@ -1,4 +1,4 @@
-package net.simplifiedcoding.spendtracker.ui
+package com.example.kotlin_testdrivendevelopment.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

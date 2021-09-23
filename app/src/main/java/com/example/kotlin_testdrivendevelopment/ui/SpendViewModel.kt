@@ -1,12 +1,13 @@
-package net.simplifiedcoding.spendtracker.ui
+package com.example.kotlin_testdrivendevelopment.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.kotlin_testdrivendevelopment.data.Spend
+import com.example.kotlin_testdrivendevelopment.data.SpendsTrackerDataSource
 import kotlinx.coroutines.launch
-import net.simplifiedcoding.spendtracker.data.Spend
-import net.simplifiedcoding.spendtracker.data.SpendsTrackerDataSource
+
 import java.util.*
 
 class SpendViewModel(

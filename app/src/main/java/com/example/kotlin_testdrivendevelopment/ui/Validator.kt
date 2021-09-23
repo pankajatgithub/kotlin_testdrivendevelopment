@@ -1,4 +1,4 @@
-package net.simplifiedcoding.spendtracker.ui
+package com.example.kotlin_testdrivendevelopment.ui
 
 object Validator {
     fun validateInput(amount: Int, description: String) =

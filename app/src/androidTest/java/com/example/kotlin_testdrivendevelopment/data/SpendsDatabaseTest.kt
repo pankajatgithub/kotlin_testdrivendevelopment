@@ -8,9 +8,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.google.common.truth.Truth.assertThat
 import junit.framework.TestCase
 import kotlinx.coroutines.runBlocking
-import net.simplifiedcoding.spendtracker.data.Spend
-import net.simplifiedcoding.spendtracker.data.SpendDao
-import net.simplifiedcoding.spendtracker.data.SpendsDatabase
+
 import org.junit.After
 import org.junit.Before
 import org.junit.Test

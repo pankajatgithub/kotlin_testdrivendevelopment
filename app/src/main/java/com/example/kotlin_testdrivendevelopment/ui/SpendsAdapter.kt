@@ -1,10 +1,11 @@
-package net.simplifiedcoding.spendtracker.ui
+package com.example.kotlin_testdrivendevelopment.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlin_testdrivendevelopment.data.Spend
 import com.example.kotlin_testdrivendevelopment.databinding.ItemSpendBinding
-import net.simplifiedcoding.spendtracker.data.Spend
+import net.simplifiedcoding.spendtracker.ui.toReadableString
 
 class SpendsAdapter : RecyclerView.Adapter<SpendsAdapter.SpendViewHolder>() {
 

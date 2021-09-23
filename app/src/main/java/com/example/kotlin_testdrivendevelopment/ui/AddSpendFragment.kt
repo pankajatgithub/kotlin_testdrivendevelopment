@@ -1,4 +1,4 @@
-package net.simplifiedcoding.spendtracker.ui
+package com.example.kotlin_testdrivendevelopment.ui
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -6,9 +6,11 @@ import android.view.View
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.example.kotlin_testdrivendevelopment.R
 import com.example.kotlin_testdrivendevelopment.databinding.FragmentAddSpendBinding
+import net.simplifiedcoding.spendtracker.ui.enabled
 
 
 class AddSpendFragment : BaseFragment(R.layout.fragment_add_spend) {
@@ -39,6 +41,7 @@ class AddSpendFragment : BaseFragment(R.layout.fragment_add_spend) {
     @SuppressLint("SetTextI18n")
     private fun addSpend() {
         viewModel.addSpend(amount, description)
-        findNavController().navigateUp()
+        binding.textViewSuccessMessage.text = "Spend Added"
+
     }
 }

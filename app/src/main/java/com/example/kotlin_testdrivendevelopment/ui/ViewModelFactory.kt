@@ -1,8 +1,8 @@
-package net.simplifiedcoding.spendtracker.ui
+package com.example.kotlin_testdrivendevelopment.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import net.simplifiedcoding.spendtracker.data.SpendsTrackerDataSource
+import com.example.kotlin_testdrivendevelopment.data.SpendsTrackerDataSource
 
 @Suppress("UNCHECKED_CAST")
 class ViewModelFactory(

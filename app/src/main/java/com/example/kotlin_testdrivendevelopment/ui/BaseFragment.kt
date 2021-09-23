@@ -1,11 +1,12 @@
-package net.simplifiedcoding.spendtracker.ui
+package com.example.kotlin_testdrivendevelopment.ui
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import net.simplifiedcoding.spendtracker.data.SpendsDatabase
-import net.simplifiedcoding.spendtracker.data.SpendsTrackerDataSource
+import com.example.kotlin_testdrivendevelopment.data.SpendsDatabase
+import com.example.kotlin_testdrivendevelopment.data.SpendsTrackerDataSource
+
 
 abstract class BaseFragment(@LayoutRes layout: Int) : Fragment(layout) {
 

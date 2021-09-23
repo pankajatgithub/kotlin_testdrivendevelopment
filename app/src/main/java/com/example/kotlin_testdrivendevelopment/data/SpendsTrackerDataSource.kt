@@ -1,4 +1,4 @@
-package net.simplifiedcoding.spendtracker.data
+package com.example.kotlin_testdrivendevelopment.data
 
 class SpendsTrackerDataSource(
     private val db: SpendDao

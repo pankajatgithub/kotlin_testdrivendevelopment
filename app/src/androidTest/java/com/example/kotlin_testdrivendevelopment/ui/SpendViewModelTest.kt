@@ -5,12 +5,12 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.kotlin_testdrivendevelopment.data.SpendsDatabase
+import com.example.kotlin_testdrivendevelopment.data.SpendsTrackerDataSource
 import com.example.kotlin_testdrivendevelopment.getOrAwaitValue
 import com.google.common.truth.Truth.assertThat
 import junit.framework.TestCase
-import net.simplifiedcoding.spendtracker.data.SpendsDatabase
-import net.simplifiedcoding.spendtracker.data.SpendsTrackerDataSource
-import net.simplifiedcoding.spendtracker.ui.SpendViewModel
+
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -29,7 +29,7 @@ class SpendViewModelTest : TestCase() {
     public override fun setUp() {
   super.setUp()
     val context = ApplicationProvider.getApplicationContext<Context>()
-        val db = Room.inMemoryDatabaseBuilder(context,SpendsDatabase::class.java)
+        val db = Room.inMemoryDatabaseBuilder(context, SpendsDatabase::class.java)
                      .allowMainThreadQueries().build()
         val dataSource = SpendsTrackerDataSource(db.getSpendDao())
         viewModel = SpendViewModel(dataSource)
